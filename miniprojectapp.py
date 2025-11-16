@@ -20,8 +20,7 @@ st.set_page_config(page_title="Telco Churn Analysis", page_icon="📊", layout="
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv(df = pd.read_csv('WA_Fn-UseC_-Telco-Customer-Churn.csv')
-)
+        df = pd.read_csv('WA_Fn-UseC_-Telco-Customer-Churn.csv')
         return df
     except FileNotFoundError:
         st.error("Dataset file not found. Please ensure 'WA_Fn-UseC_-Telco-Customer-Churn.csv' is in the same directory.")
